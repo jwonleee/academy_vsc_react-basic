@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <React.StrictMode> {/* 이게 있으면 props에서 콘솔 찍으면 두 번 나옴 */}
     <App />
   </React.StrictMode>
 );

@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import MyComponent from "./component/MyComponent";
+import MyComponent2 from "./component/MyComponent2";
+import MyComponent3 from "./component/MyComponent3";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/* ES6 문법 */
+const App = () => {
+    return (
+        <Fragment>
+        <h3>App.JS</h3>
+        <MyComponent /> {/* 하나로 끝나는 태그 */}
+        <MyComponent /> {/* 재활용 가능 */}
+        {/* <MyComponent /> 주석처리 가능 */}
+        {/* props: 하위 컴포넌트로 전달되는 데이터 값 */}
+        <MyComponent name={'홍길동'} age={20} email={'aaa@naver.com'} /> {/* (1) 상위 컴포넌트에서 값을 넣고 */}
+        <MyComponent2 />
+        <MyComponent3 />
+        </Fragment>
+    )
 }
 
 export default App;
