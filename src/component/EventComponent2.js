@@ -11,6 +11,7 @@ const EventComponent2 = () => {
         // console.log(e.target.name); //name 나옴
         // console.log(data) //{name: '', topic: ''} = state는 객체
         // 객체 안에서 key를 바꾸는 방법 ["키"] : 값
+        console.log(e);
         const copy = {...data, [e.target.name]: e.target.value }; //데이터 복사 ▶ name의 값을 사용자가 입력한 값으로 바꾸기
         // console.log(copy);
         setData(copy); //name state 변경

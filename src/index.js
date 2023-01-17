@@ -6,9 +6,13 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode> {/* 이게 있으면 props에서 콘솔 찍으면 두 번 나옴 */}
+/*   
+  <React.StrictMode> 이게 있으면 props에서 콘솔 찍으면 두 번 나옴
     <App />
   </React.StrictMode>
+*/
+  <App />
+
 );
 
 // If you want to start measuring performance in your app, pass a function
