@@ -51,6 +51,22 @@ const IterationComponentQ2 = () => {
         setList(newSearch);
     }
 
+
+    // 강사님 답
+    // const [search, setSearch] = useState('');
+    // const handleSarch = (e) => {
+    //     setSearch(e.target.value);
+    // }
+
+    // const handleSarch = () => {
+    //     //search 사용자의 검색값
+    //     //data 객체에서의 조회
+    // let newList = data.filter( obj => obj.type.toLowerCase().includes(search) ||
+	// 								  obj.teacher.includes(search) )
+	// setList(newList);
+    // }
+
+
     return (
         <>
             <h3>컴포넌트 반복 실습</h3>
