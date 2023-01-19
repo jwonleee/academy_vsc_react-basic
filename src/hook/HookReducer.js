@@ -21,10 +21,8 @@ const myReducer = (state, action) => {
     }
 
     return state; //변화된 값에 대한 결과를 return (반드시 걸어주기)
-
 }
  */
-
 
 const HookReducer = () => {
 

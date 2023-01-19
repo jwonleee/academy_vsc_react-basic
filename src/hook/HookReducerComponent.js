@@ -25,7 +25,7 @@ const myReducer = (state, action) => {
 //2. nameReducer
 const nameReducer = (state, action) => {
 
-    // console.log(action.name); //e.target.name
+    console.log(action.name); //e.target.name
     
     // if(action.name == "name") {
     //     state = {...state, ["name"]:action.value};
